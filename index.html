@@ -1,120 +1,443 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Vivek kulkarni Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Kulkarni | Car-IT Security Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-slate-200 mb-8 text-center;
+        }
+        .card {
+            @apply bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 transition-all duration-300 hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/10;
+        }
+        .skill-badge {
+            @apply inline-block bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/70 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Vivek Kulkarni</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-sky-400 transition-colors">Experience</a>
+                <a href="#skills" class="hover:text-sky-400 transition-colors">Skills</a>
+                <a href="#publications" class="hover:text-sky-400 transition-colors">Publications</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#contact" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block hover:text-sky-400 transition-colors py-2">About</a>
+            <a href="#experience" class="block hover:text-sky-400 transition-colors py-2">Experience</a>
+            <a href="#skills" class="block hover:text-sky-400 transition-colors py-2">Skills</a>
+            <a href="#publications" class="block hover:text-sky-400 transition-colors py-2">Publications</a>
+            <a href="#projects" class="block hover:text-sky-400 transition-colors py-2">Projects</a>
+            <a href="#contact" class="block bg-sky-500 hover:bg-sky-600 text-white font-semibold px-4 py-2 rounded-lg transition-colors mt-2 text-center">Contact</a>
+        </div>
+    </header>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Vivek Kulkarni </h1>
-						<p>In Vehicle Networking Engineer<!--- <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a>--><br />
-							Mercedes Benz Research and Development India <!--<a href="https://html5up.net/license">Creative Commons license</a>.</p>-->
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <main class="container mx-auto px-6 py-12">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">VK</a>
-					</header>
+        <!-- Hero Section -->
+        <section id="home" class="text-center py-20">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+                Vivek Kulkarni
+            </h1>
+            <p class="text-xl md:text-2xl text-sky-400 font-semibold mb-6">
+                Car-IT Security Architect
+            </p>
+            <p class="max-w-3xl mx-auto text-slate-400 mb-8">
+                ISO 21434-certified Automotive Cybersecurity Architect specializing in secure vehicle architecture, vulnerability management, TARA, and regulatory compliance (UNECE R155/156).
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="https://www.linkedin.com/in/vivek-kulkarni-65ba35147" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105 flex items-center space-x-2">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/your-github-username" target="_blank" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105 flex items-center space-x-2">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html"> PORTFOLIO </a></li>
-							<li><a href="elements.html"> BLOGS & ARTICLES </a></li>
-							<li><a href="generic.html"> ABOUT ME </a></li>							
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-4xl mx-auto card">
+                <p class="text-lg text-slate-300 leading-relaxed">
+                    I am a dedicated and certified Automotive Cybersecurity Architect with a proven track record in designing and implementing robust security solutions for the connected vehicle ecosystem. My expertise lies in embedding security throughout the Software Development Lifecycle (SDLC), from initial threat modeling to final validation. I thrive on collaborating with cross-functional teams, including OEMs and Tier-1 suppliers, to translate complex security requirements into tangible, secure-by-design products. My goal is to stay at the forefront of automotive security, tackling emerging threats and contributing to a safer future for mobility.
+                </p>
+            </div>
+        </section>
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/vivek-kulkarni-65ba35147/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://www.facebook.com/vivek.kulkarni.75641" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/vivek_kulkarni__/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Vivek385" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <!-- Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="relative max-w-4xl mx-auto">
+                <!-- Timeline line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-slate-700"></div>
 
-				<!-- Main -->
-					<div id="main">
+                <!-- Experience Item 1 -->
+                <div class="mb-12 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                    </div>
+                    <div class="order-1 w-5/12">
+                        <div class="card">
+                            <p class="text-sm text-slate-400 mb-1">Jan 2024 – Present</p>
+                            <h3 class="text-xl font-bold text-white mb-2">Car-IT Security Architect</h3>
+                            <p class="text-md font-semibold text-slate-300 mb-3">Mercedes-Benz R&D India</p>
+                            <ul class="list-disc list-inside text-slate-400 space-y-2">
+                                <li>Lead vulnerability research, assessment, and remediation for critical vehicle components.</li>
+                                <li>Perform Threat Analysis and Risk Assessment (TARA) in line with ISO 21434.</li>
+                                <li>Architect secure-by-design solutions for controllers and in-vehicle networks.</li>
+                                <li>Ensure UNECE R155/156 compliance with Tier-1 suppliers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">VIVEK KULKARNI</a></h2>
-									<p>Current role : In Vehicle Networking Engineer <br />
-									@Mercedes Benz Research and Development India <br />
-									Bengaluru, Karnataka, India</p>
-								</header>
-								<a href="#" class="image main"><img src="images\profile_2.PNG" alt="" />
-								</a>
-								<p>Silver award for Q3-Q4 2022 from Mercedes-Benz R & D India.
-								<a href="#" class="image main"><img src="images\silver_award.jpg" alt="" />
-									</a>
-								<p>Gold award-2021 from Mercedes-Benz R & D India.
-									<a href="#" class="image main"><img src="images\gold_award.jpg" alt="" />
-									</a>
-								<p>Silver award Q1-Q2 2021 from Mercedes-Benz R & D India.
-									<a href="#" class="image main"><img src="images\silver_award_2.jpg" alt="" />
-									</a>
-							<ul class="actions special">
-									<li><a href="generic.html" class="button large"> ABOUT ME </a></li>
-								</ul>
-							
-								
+                <!-- Experience Item 2 -->
+                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                    </div>
+                    <div class="order-1 w-5/12">
+                         <div class="card">
+                            <p class="text-sm text-slate-400 mb-1">Jan 2023 – Dec 2023</p>
+                            <h3 class="text-xl font-bold text-white mb-2">Car-IT Security Engineer</h3>
+                            <p class="text-md font-semibold text-slate-300 mb-3">Mercedes-Benz R&D India</p>
+                            <ul class="list-disc list-inside text-slate-400 space-y-2">
+                                <li>Implemented vulnerability scanning automation using Django and Python.</li>
+                                <li>Acted as Product Owner for a web-based vulnerability management tool.</li>
+                                <li>Researched network security mechanisms (MACsec) and Post-Quantum Cryptography (PQC).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-							</article>
-						
-							
-							
-							  
+                <!-- Experience Item 3 -->
+                <div class="mb-12 flex justify-between items-center w-full right-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                    </div>
+                    <div class="order-1 w-5/12">
+                        <div class="card">
+                            <p class="text-sm text-slate-400 mb-1">Sept 2020 – Dec 2022</p>
+                            <h3 class="text-xl font-bold text-white mb-2">In-Vehicle Networking & AUTOSAR Engineer</h3>
+                            <p class="text-md font-semibold text-slate-300 mb-3">Mercedes-Benz R&D India</p>
+                            <ul class="list-disc list-inside text-slate-400 space-y-2">
+                                <li>Designed AUTOSAR-compliant communication description files (Ethernet, CAN, FlexRay).</li>
+                                <li>Automated release patching and configuration generation using Python.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                 <!-- Experience Item 4 -->
+                <div class="mb-12 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                    <div class="order-1 w-5/12"></div>
+                    <div class="z-20 flex items-center order-1 bg-sky-500 shadow-xl w-8 h-8 rounded-full">
+                        <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                    </div>
+                    <div class="order-1 w-5/12">
+                         <div class="card">
+                            <p class="text-sm text-slate-400 mb-1">Sept 2019 – Sept 2020</p>
+                            <h3 class="text-xl font-bold text-white mb-2">Gateway Engineer</h3>
+                            <p class="text-md font-semibold text-slate-300 mb-3">Mercedes-Benz R&D India</p>
+                            <ul class="list-disc list-inside text-slate-400 space-y-2">
+                                <li>Validated gateway software features and ECU network integration.</li>
+                                <li>Performed functional and system-level validation for secure message routing.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-						
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>AECS Layout, Kundalahalli<br />
-								Bengaluru, Karnataka.</p>
-							</section>
-						<section>
-								<h3>Email</h3>
-								<p><a href="#">kulkarniv385@gmail.com</a></p>
-							</section>
-							</section>
-					</footer>
+            </div>
+        </section>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Vivek Kulkarni</li><li>Design: <a href="https://html5up.net"><p>Background Source : <a href="https://www.freepik.com/free-photo/businessman-logging-his-tablet_15474932.htm#query=network%20security&position=11&from_view=keyword">Image by rawpixel.com</a> on Freepik</a> </p>
-						</a></li></ul>
-					</div>
+        <!-- Skills Section -->
+        <section id="skills" class="py-20">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Cybersecurity</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">TARA</span>
+                        <span class="skill-badge">Threat Modeling</span>
+                        <span class="skill-badge">Secure SDLC</span>
+                        <span class="skill-badge">Vulnerability Management</span>
+                        <span class="skill-badge">PKI</span>
+                        <span class="skill-badge">Secure Boot</span>
+                        <span class="skill-badge">OTA Security</span>
+                        <span class="skill-badge">Intrusion Detection</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Standards & Compliance</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">ISO 21434</span>
+                        <span class="skill-badge">UNECE R155/156</span>
+                        <span class="skill-badge">ISO 26262</span>
+                        <span class="skill-badge">NIST</span>
+                        <span class="skill-badge">GDPR</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Automotive</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">AUTOSAR</span>
+                        <span class="skill-badge">CAN / CAN-FD</span>
+                        <span class="skill-badge">FlexRay</span>
+                        <span class="skill-badge">Automotive Ethernet</span>
+                        <span class="skill-badge">SOME/IP</span>
+                        <span class="skill-badge">SecOC</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Development & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">CI/CD (Jenkins)</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Git</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">CANoe</span>
+                        <span class="skill-badge">DaVinci Configurator</span>
+                        <span class="skill-badge">Matlab/Simulink</span>
+                        <span class="skill-badge">Jira</span>
+                        <span class="skill-badge">Confluence</span>
+                        <span class="skill-badge">VMware</span>
+                    </div>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-bold text-white mb-4">Interests</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Generative AI in Security</span>
+                        <span class="skill-badge">Post-Quantum Cryptography</span>
+                        <span class="skill-badge">Cyber Threat Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-			</div>
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-20">
+            <h2 class="section-title">Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="shield-check" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">ISO 21434 Practitioner</h3>
+                        <p class="text-slate-400">TÜV SÜD</p>
+                    </div>
+                </div>
+                <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="award" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">Certified in Cybersecurity (CC)</h3>
+                        <p class="text-slate-400">ISC2</p>
+                    </div>
+                </div>
+                <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="file-check-2" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">ISTQB® Foundation Level</h3>
+                        <p class="text-slate-400">ISTQB</p>
+                    </div>
+                </div>
+                <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="briefcase" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">Professional Scrum Master I</h3>
+                        <p class="text-slate-400">Scrum.org</p>
+                    </div>
+                </div>
+                 <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="lock" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">OpSec for Privacy</h3>
+                        <p class="text-slate-400">JHT</p>
+                    </div>
+                </div>
+                <div class="card flex items-center space-x-4">
+                    <div class="flex-shrink-0 bg-slate-700 p-3 rounded-lg"><i data-lucide="graduation-cap" class="w-8 h-8 text-sky-400"></i></div>
+                    <div>
+                        <h3 class="font-bold text-white">Cybersecurity Essentials</h3>
+                        <p class="text-slate-400">Microsoft & LinkedIn</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <h2 class="section-title">Key Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-white mb-3">Vulnerability Management Automation</h3>
+                    <p class="text-slate-400 mb-4">Developed a web-based tool using Django and Python to automate vulnerability scanning, detection, and management. This streamlined workflows, reduced manual effort, and improved the speed and accuracy of the vulnerability lifecycle.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Django</span>
+                        <span class="skill-badge">Automation</span>
+                        <span class="skill-badge">Vulnerability Management</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-2xl font-bold text-white mb-3">Generative AI for Risk Investigation</h3>
+                    <p class="text-slate-400 mb-4">Led a proof-of-concept project to explore the use of generative AI models for automating the initial stages of risk investigation. The goal was to accelerate threat analysis by automatically correlating data and suggesting potential attack vectors.</p>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">Generative AI</span>
+                        <span class="skill-badge">Risk Assessment</span>
+                        <span class="skill-badge">Automation</span>
+                        <span class="skill-badge">R&D</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- Publications & Open Source Section -->
+        <section id="publications" class="py-20">
+            <h2 class="section-title">Publications & Open Source</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                
+                <!-- GitHub Projects Column -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">GitHub Projects</h3>
+                    <div class="space-y-8">
+                        <!-- GitHub Project 1 -->
+                        <div class="card">
+                            <h4 class="text-xl font-bold text-white mb-2">Project Name 1</h4>
+                            <p class="text-slate-400 mb-4">A brief description of your project, what it does, and the technologies used. Keep it concise and impactful.</p>
+                            <a href="#" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300 transition-colors flex items-center space-x-2">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                        <!-- GitHub Project 2 -->
+                        <div class="card">
+                            <h4 class="text-xl font-bold text-white mb-2">Project Name 2</h4>
+                            <p class="text-slate-400 mb-4">Another project you're proud of. Explain the problem it solves or the skills it demonstrates.</p>
+                            <a href="#" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300 transition-colors flex items-center space-x-2">
+                                <i data-lucide="github" class="w-5 h-5"></i>
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-	</body>
+                <!-- Medium Articles Column -->
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-6 text-center">Medium Articles</h3>
+                    <div class="space-y-8">
+                        <!-- Medium Article 1 -->
+                        <div class="card">
+                            <h4 class="text-xl font-bold text-white mb-2">Title of Your Article 1</h4>
+                            <p class="text-slate-400 mb-4">A short summary of your article. What is the key takeaway for the reader? What topic do you explore?</p>
+                            <a href="#" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300 transition-colors flex items-center space-x-2">
+                                <i data-lucide="file-text" class="w-5 h-5"></i>
+                                <span>Read on Medium</span>
+                            </a>
+                        </div>
+                        <!-- Medium Article 2 -->
+                        <div class="card">
+                            <h4 class="text-xl font-bold text-white mb-2">Title of Your Article 2</h4>
+                            <p class="text-slate-400 mb-4">Another article you've written. Briefly explain the main points or the insights you shared.</p>
+                            <a href="#" target="_blank" class="font-semibold text-sky-400 hover:text-sky-300 transition-colors flex items-center space-x-2">
+                                <i data-lucide="file-text" class="w-5 h-5"></i>
+                                <span>Read on Medium</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 mb-8">
+                I'm always open to discussing new opportunities and collaborations. The best way to reach me is through LinkedIn.
+            </p>
+            <a href="https://www.linkedin.com/in/vivek-kulkarni-65ba35147" target="_blank" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold text-lg py-4 px-8 rounded-lg transition-transform hover:scale-105">
+                Connect on LinkedIn
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 py-6 text-center text-slate-500">
+            <p>&copy; <span id="current-year"></span> Vivek Kulkarni. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll to top button -->
+    <button id="to-top-button" title="Go To Top"
+        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-sky-500 hover:bg-sky-600 text-white text-lg font-semibold transition-colors duration-300">
+        <i data-lucide="arrow-up" class="w-6 h-6 mx-auto"></i>
+    </button>
+
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Scroll to top button logic
+        var toTopButton = document.getElementById("to-top-button");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove("hidden");
+            } else {
+                toTopButton.classList.add("hidden");
+            }
+        };
+
+        toTopButton.onclick = function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+    </script>
+</body>
 </html>
